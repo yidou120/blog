@@ -1,10 +1,7 @@
 package com.edou.blog.web;
 
-import com.edou.blog.exception.NotFoundExcepiton;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.Objects;
 
 /**
  * @ClassName IndexController
@@ -18,11 +15,12 @@ public class IndexController {
 
     @GetMapping("/")
     public String index() {
-        int i = 1/0;
+//        int i = 1/0;
         /*String blog = null;
         if(Objects.isNull(blog)){
             throw new NotFoundExcepiton("博客不存在");
         }*/
+        System.out.println("test----------");
         return "index";
     }
 
